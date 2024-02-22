@@ -15,10 +15,7 @@ public class ItemBehavior : MonoBehaviour
 
             PlayerBehavior Player = collision.gameObject.GetComponent<PlayerBehavior>();
             Player.BoostSpeed(BoostMultiplier, BoostSeconds);
-        }
-        if(collision.gameObject.name == "Player")
-        {
-            Destroy(this.transform.parent.gameObject);
+
             Debug.Log("Item Collected!");
             gameManager.Items += 1;
         }

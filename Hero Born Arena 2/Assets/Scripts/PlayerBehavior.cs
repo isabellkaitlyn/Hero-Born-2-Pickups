@@ -85,5 +85,13 @@ public class PlayerBehavior : MonoBehaviour
         {
             _gameManager.HP -= 1;
         }
+        if(collision.gameObject.name == "Enemy 2")
+        {
+            _gameManager.HP -= 1;
+        }
+        if(collision.gameObject.name == "Enemy 3")
+        {
+            _gameManager.HP -= 1;
+        }
     }
 }

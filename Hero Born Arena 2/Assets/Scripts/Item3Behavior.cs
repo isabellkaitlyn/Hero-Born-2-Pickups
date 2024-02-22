@@ -11,7 +11,9 @@ public class Item3Behavior : MonoBehaviour
         {
             Destroy(this.transform.parent.gameObject);
             Debug.Log("Med Kit Acquired!");
+            gameManager.HP += 1;
         }
+        
         if(collision.gameObject.name == "Player")
         {
             Destroy(this.transform.parent.gameObject);
